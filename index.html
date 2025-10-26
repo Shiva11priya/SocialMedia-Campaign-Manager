@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Campaign Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="fade-in">
+    <h1>🚀 Social Media Campaign Manager</h1>
+    <p>Schedule and track your social media campaigns efficiently</p>
+  </header>
+
+  <main>
+    <section class="form-section slide-up">
+      <h2>Create Campaign</h2>
+      <form id="campaignForm">
+        <div class="input-group">
+          <label>Campaign Name</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="input-group">
+          <label>Platform</label>
+          <select id="platform" required>
+            <option value="">Select Platform</option>
+            <option>Instagram</option>
+            <option>Facebook</option>
+            <option>Twitter</option>
+            <option>LinkedIn</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Start Date</label>
+          <input type="date" id="start" required />
+        </div>
+
+        <div class="input-group">
+          <label>End Date</label>
+          <input type="date" id="end" required />
+        </div>
+
+        <div class="input-group">
+          <label>Status</label>
+          <select id="status" required>
+            <option value="Planned">Planned</option>
+            <option value="Ongoing">Ongoing</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+         
+
+        <button type="submit" class="glow-btn">+ Add Campaign</button>
+      </form>
+    </section>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search by name..." />
+      <button id="searchBtn">🔍 Search</button>
+      <select id="filterPlatform">
+        <option value="">All Platforms</option>
+        <option>Instagram</option>
+        <option>Facebook</option>
+        <option>Twitter</option>
+        <option>LinkedIn</option>
+      </select>
+      <select id="filterStatus">
+        <option value="">All Status</option>
+        <option>Planned</option>
+        <option>Ongoing</option>
+        <option>Completed</option>
+      </select>
+    </div>
+
+    <section class="table-section fade-in">
+      <h2>📋 Campaign List</h2>
+      <div id="campaignList" class="campaign-list">
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by <b>Shiva Priya</b> | Fullstack Web Development Journey</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
